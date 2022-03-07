@@ -5,29 +5,21 @@
 </route>
 
 <template>
-	<div class="container">
-        <p>Homepage</p>
-
-        <Test />
-    </div>
+	<div class="container text-center mt-20">
+		<p class="text-3xl mb-4">
+			This page is: {{ $route.name }}
+		</p>
+	</div>
 </template>
 
 <script setup>
-	import { computed } from "vue";
-	import { useHead } from "@vueuse/head";
-	import { router } from "@/router";
-
-	const currentRoute = computed(() => {
-		return router.currentRoute.value.name;
-	});
-
 	useHead({
-		title: currentRoute.value,
+		title: useRoute().name,
 		meta: [
 			{
 				name: "description",
-				content: "Page description",
-			},
-		],
+				content: "Homepage description"
+			}
+		]
 	});
 </script>

@@ -6,26 +6,18 @@
 
 <template>
 	<div class="container">
-		<p>Not found</p>
+		<p>404 page</p>
 	</div>
 </template>
 
 <script setup>
-	import { computed } from "vue";
-	import { useHead } from "@vueuse/head";
-	import { router } from "@/router";
-
-	const currentRoute = computed(() => {
-		return router.currentRoute.value.name;
-	});
-
 	useHead({
-		title: currentRoute.value,
+		title: useRoute().name,
 		meta: [
 			{
 				name: "description",
-				content: "Page not found",
-			},
-		],
+				content: "Page not found"
+			}
+		]
 	});
 </script>
