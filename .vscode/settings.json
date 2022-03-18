@@ -11,4 +11,11 @@
         "vue",
         "html"
     ],
+    "explorer.experimental.fileNesting.enabled": true,
+    "explorer.experimental.fileNesting.expand": false,
+    "explorer.experimental.fileNesting.patterns": {
+        "package.json": "package*",
+        "readme.md": "*.md",
+        ".gitignore": ".git*, .eslint*",
+    },
 }

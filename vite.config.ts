@@ -1,4 +1,5 @@
 import { resolve } from "path";
+import { existsSync } from "fs";
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
@@ -6,23 +7,18 @@ import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import WindiCSS from "vite-plugin-windicss";
 
-import type { Resolver } from "unplugin-auto-import/dist/types";
+import type { Resolver } from "unplugin-auto-import/types";
 
-const compositionResolver: Resolver = (name: string) => {
-	const isCompositionApi = name.startsWith("use");
-	if (isCompositionApi) {
+const compositionResolver: Resolver = (name: string): string | void => {
+	if (name.startsWith("use") && existsSync(resolve(`@/composables/${name}`))) {
         return `@/composables/${name}`;
-	}
+    }
 };
 
 export default defineConfig({
     resolve: {
         alias: {
-            "@": resolve(__dirname, "./src"),
-            "@pages": resolve(__dirname, "./src/pages"),
-            "@types": resolve(__dirname, "./src/types"),
-            "@components": resolve(__dirname, "./src/components"),
-            "@composables": resolve(__dirname, "./src/composables")
+            "@": resolve(__dirname, "./src")
         }
     },
     plugins: [

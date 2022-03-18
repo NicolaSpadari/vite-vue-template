@@ -13,10 +13,10 @@
         "@typescript-eslint/quotes": ["error", "double"],
         "@typescript-eslint/comma-dangle": ["warn", "never"],
         "@typescript-eslint/brace-style": ["error", "1tbs"],
-        "vue/html-indent": ["error", "tab", {
+        "vue/html-indent": ["error", 4, {
             "baseIndent": 1
         }],
-        "vue/script-indent": ["error", "tab", {
+        "vue/script-indent": ["error", 4, {
             "baseIndent": 1
         }]
     }

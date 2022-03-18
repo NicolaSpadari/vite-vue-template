@@ -5,19 +5,19 @@
 </route>
 
 <template>
-	<div class="container">
-		<p>404 page</p>
-	</div>
+    <div class="container">
+        <p>404 page</p>
+    </div>
 </template>
 
-<script setup>
-	useHead({
-		title: useRoute().name,
-		meta: [
-			{
-				name: "description",
-				content: "Page not found"
-			}
-		]
-	});
+<script lang="ts" setup>
+    useHead({
+        title: String(useRoute().name),
+        meta: [
+            {
+                name: "description",
+                content: "Page not found"
+            }
+        ]
+    });
 </script>

@@ -1,4 +1,5 @@
 import { defineConfig } from "vite-plugin-windicss";
+import BsGrid from "@spada/windicss-plugin-bsgrid";
 
 export default defineConfig({
     transformCSS: "pre",
@@ -12,10 +13,13 @@ export default defineConfig({
         container: false
     },
     theme: {
-        extend: {
-            inset: {
-                unset: "unset"
-            }
+        screens: {
+            sm: "576px",
+            md: "768px",
+            lg: "992px",
+            xl: "1200px",
+            xxl: "1400px"
         }
-    }
+    },
+    plugins: [BsGrid()]
 });
