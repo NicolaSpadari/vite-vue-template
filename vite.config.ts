@@ -1,19 +1,11 @@
 import { resolve } from "path";
-import { existsSync } from "fs";
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
+import { DirResolverHelper, dirResolver } from "vite-auto-import-resolvers";
 import WindiCSS from "vite-plugin-windicss";
-
-import type { Resolver } from "unplugin-auto-import/types";
-
-const compositionResolver: Resolver = (name: string): string | void => {
-	if (name.startsWith("use") && existsSync(resolve(`@/composables/${name}`))) {
-        return `@/composables/${name}`;
-    }
-};
 
 export default defineConfig({
     resolve: {
@@ -30,10 +22,9 @@ export default defineConfig({
         }),
         WindiCSS(),
         Components({
-            extensions: ["vue"],
-            dirs: ["src/components"],
             deep: false
         }),
+        DirResolverHelper(),
         AutoImport({
             imports: [
                 "vue",
@@ -44,8 +35,7 @@ export default defineConfig({
                     axios: [["default", "axios"]]
                 }
             ],
-            resolvers: [compositionResolver],
-            dts: "src/auto-imports.d.ts"
+            resolvers: [dirResolver()]
         })
     ],
     server: {

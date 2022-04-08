@@ -18,6 +18,9 @@
         }],
         "vue/script-indent": ["error", 4, {
             "baseIndent": 1
+        }],
+        "vue/component-tags-order": ["error", {
+            "order": [["template", "script"], "style"]
         }]
     }
 }
