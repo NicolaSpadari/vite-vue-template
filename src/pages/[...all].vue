@@ -11,8 +11,10 @@
 </template>
 
 <script lang="ts" setup>
+    const route = useRoute();
+
     useHead({
-        title: String(useRoute().name),
+        title: String(route.name),
         meta: [
             {
                 name: "description",

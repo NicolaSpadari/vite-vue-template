@@ -6,15 +6,17 @@
 
 <template>
     <div class="container text-center mt-20">
-        <test class="text-3xl mb-4">
+        <p class="text-3xl mb-4">
             This page is: {{ $route.name }}
-        </test>
+        </p>
     </div>
 </template>
 
 <script lang="ts" setup>
+    const route = useRoute();
+
     useHead({
-        title: String(useRoute().name),
+        title: String(route.name),
         meta: [
             {
                 name: "description",

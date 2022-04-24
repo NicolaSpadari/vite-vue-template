@@ -9,7 +9,8 @@
         "javascript",
         "typescript",
         "vue",
-        "html"
+        "html",
+        "json"
     ],
     "explorer.experimental.fileNesting.enabled": true,
     "explorer.experimental.fileNesting.expand": false,

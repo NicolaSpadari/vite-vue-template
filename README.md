@@ -42,14 +42,6 @@ npx degit NicolaSpadari/vite-vue-template my-app
 cd my-app
 ```
 
-### Check package updates
-
-```sh
-npx taze
-npx taze -w
-npm i
-```
-
 ### Development
 
 Run and visit http://localhost:3000

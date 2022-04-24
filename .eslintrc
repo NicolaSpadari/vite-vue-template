@@ -20,7 +20,7 @@
             "baseIndent": 1
         }],
         "vue/component-tags-order": ["error", {
-            "order": [["template", "script"], "style"]
+            "order": ["template", "script", "style"]
         }]
     }
 }

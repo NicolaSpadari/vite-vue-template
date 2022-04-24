@@ -11,6 +11,9 @@
 		-webkit-tap-highlight-color: transparent;
 		scroll-behavior: smooth;
 	}
+    body {
+        @apply overflow-x-hidden;
+    }
 	img {
 		-webkit-user-drag: none;
 		@apply select-none;
