@@ -2,13 +2,13 @@
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite) - latest, cutting-edge techologies
 
-- 📂 File based routing
+- 📂 File-based routing
 
 - 📦 Components and composables auto importing
 
 - 📥 APIs and types auto importing
 
-- 🎨 [Windi CSS](https://github.com/windicss/windicss)
+- 🎨 [UnoCSS](https://github.com/unocss/unocss)
 
 - 🔥 [\<script setup\> syntax](https://github.com/vuejs/rfcs/pull/227)
 
@@ -16,8 +16,7 @@
 
 ### UI Frameworks
 
-- [Windi CSS](https://github.com/windicss/windicss) (On-demand Tailwind with additional features)
-- [Bootstrap 5 grid](https://github.com/NicolaSpadari/windicss-plugin-bsgrid) (windicss plugin)
+- [UnoCSS](https://github.com/unocss/unocss) (The instant on-demand atomic CSS engine)
 - [SCSS](https://sass-lang.com/)
 
 ### Plugins
@@ -26,7 +25,7 @@
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [unplugin-auto-import](https://github.com/antfu/unplugin-vue-components) - APIs auto import
-- [vite-plugin-windicss](https://github.com/antfu/vite-plugin-windicss) - Windi CSS Integration
+- [vite-auto-import-resolvers](https://github.com/dishait/vite-auto-import-resolvers) - composables auto import
 - [@vueuse/core](https://github.com/antfu/vueuse) - useful composition APIs
 - [@vueuse/head](https://github.com/vueuse/head) - manipulate document head reactively
 

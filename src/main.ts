@@ -2,8 +2,8 @@ import { createApp } from "vue";
 import { createHead } from "@vueuse/head";
 import { router } from "@/router";
 import App from "@/App.vue";
-import "virtual:windi.css";
-import "virtual:windi-devtools";
+import "@unocss/reset/tailwind.css";
+import "uno.css";
 
 const head = createHead();
 const app = createApp(App);

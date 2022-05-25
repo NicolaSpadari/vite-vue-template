@@ -5,7 +5,8 @@ import Pages from "vite-plugin-pages";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import { DirResolverHelper, dirResolver } from "vite-auto-import-resolvers";
-import WindiCSS from "vite-plugin-windicss";
+import UnoCSS from "unocss/vite";
+import EnvLoader from "vite-plugin-envloader";
 
 export default defineConfig({
     resolve: {
@@ -20,7 +21,8 @@ export default defineConfig({
         Pages({
             extensions: ["vue"]
         }),
-        WindiCSS(),
+        EnvLoader(),
+        UnoCSS(),
         Components({
             deep: false
         }),

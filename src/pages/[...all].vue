@@ -5,7 +5,7 @@
 </route>
 
 <template>
-    <div class="container">
+    <div container>
         <p>404 page</p>
     </div>
 </template>
