@@ -5,7 +5,8 @@
   "author": "Nicola Spadari",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "lint": "eslint --fix --ext .js,.ts,.vue,.json ."
   },
   "dependencies": {
     "@vueuse/core": "^8.5.0",
