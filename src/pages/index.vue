@@ -5,8 +5,8 @@
 </route>
 
 <template>
-    <div container class="text-center mt-20">
-        <p class="text-3xl mb-4">
+    <div container class="mt-20 text-center">
+        <p class="mb-4 text-3xl">
             This page is: {{ $route.name }}
         </p>
     </div>

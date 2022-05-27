@@ -7,18 +7,18 @@
 </template>
 
 <style lang="scss">
-	html {
-		-webkit-tap-highlight-color: transparent;
-		scroll-behavior: smooth;
-	}
+    html {
+        -webkit-tap-highlight-color: transparent;
+        scroll-behavior: smooth;
+    }
     body {
         @apply overflow-x-hidden;
     }
-	img {
-		-webkit-user-drag: none;
-		@apply select-none;
-	}
-    [container]{
+    img {
+        -webkit-user-drag: none;
+        @apply select-none;
+    }
+    [container] {
         @apply mx-auto;
     }
 </style>
