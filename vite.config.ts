@@ -1,4 +1,5 @@
-import { resolve } from "path";
+// import { resolve } from "path";
+import { fileURLToPath, URL } from "url";
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
@@ -11,12 +12,17 @@ import EnvLoader from "vite-plugin-envloader";
 export default defineConfig({
     resolve: {
         alias: {
-            "@": resolve(__dirname, "./src")
+            "@": fileURLToPath(new URL("./src", import.meta.url))
         }
     },
     plugins: [
         Vue({
-            include: [/\.vue$/]
+            include: [/\.vue$/],
+            template: {
+                compilerOptions: {
+                    isCustomElement: (tag) => tag.startsWith("i-")
+                }
+            }
         }),
         Pages({
             extensions: ["vue"]

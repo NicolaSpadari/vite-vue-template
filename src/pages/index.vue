@@ -9,6 +9,8 @@
         <p class="mb-4 text-3xl">
             This page is: {{ $route.name }}
         </p>
+
+        <Test />
     </div>
 </template>
 
