@@ -1,6 +1,6 @@
 {
     "name": "vite-vue-template",
-    "version": "2.6.0",
+    "version": "3.0.0",
     "private": true,
     "author": "Nicola Spadari",
     "eslintConfig": {
@@ -25,10 +25,10 @@
         "@vitejs/plugin-vue": "^2.3.3",
         "eslint": "^8.19.0",
         "sass": "^1.53.0",
-        "unocss": "^0.44.1",
+        "unocss": "^0.44.2",
         "unplugin-auto-import": "^0.8.8",
         "unplugin-vue-components": "^0.19.9",
-        "vite": "^2.9.14",
+        "vite": "^3.0.0",
         "vite-auto-import-resolvers": "^3.0.1",
         "vite-plugin-envloader": "^0.2.0",
         "vite-plugin-pages": "^0.23.0"
