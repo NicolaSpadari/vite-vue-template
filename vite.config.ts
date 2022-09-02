@@ -1,13 +1,12 @@
-// import { resolve } from "path";
 import { fileURLToPath, URL } from "url";
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
-import { DirResolverHelper, dirResolver } from "vite-auto-import-resolvers";
 import UnoCSS from "@unocss/vite";
 import EnvLoader from "vite-plugin-envloader";
+import { dirResolver, DirResolverHelper } from "vite-auto-import-resolvers";
 
 export default defineConfig({
     resolve: {
@@ -20,18 +19,18 @@ export default defineConfig({
             include: [/\.vue$/],
             template: {
                 compilerOptions: {
-                    isCustomElement: (tag) => tag.startsWith("i-")
+                    isCustomElement: (tag: string) => tag.startsWith("i-")
                 }
             }
         }),
         Pages({
             extensions: ["vue"]
         }),
-        EnvLoader(),
         UnoCSS(),
         Components({
             deep: false
         }),
+        EnvLoader(),
         DirResolverHelper(),
         AutoImport({
             imports: [

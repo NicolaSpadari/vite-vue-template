@@ -26,6 +26,7 @@
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [unplugin-auto-import](https://github.com/antfu/unplugin-vue-components) - APIs auto import
 - [vite-auto-import-resolvers](https://github.com/dishait/vite-auto-import-resolvers) - composables auto import
+- [vite-plugin-envloader](https://github.com/NicolaSpadari/vite-plugin-envloader) - inject env variables in process.env
 - [@vueuse/core](https://github.com/antfu/vueuse) - useful composition APIs
 - [@vueuse/head](https://github.com/vueuse/head) - manipulate document head reactively
 
