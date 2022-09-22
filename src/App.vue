@@ -12,7 +12,7 @@
         scroll-behavior: smooth;
     }
     body {
-        @apply overflow-x-hidden;
+        @apply overflow-x-hidden font-sans;
     }
     img {
         -webkit-user-drag: none;

@@ -1,4 +1,4 @@
-import { fileURLToPath, URL } from "url";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
@@ -11,7 +11,7 @@ import { dirResolver, DirResolverHelper } from "vite-auto-import-resolvers";
 export default defineConfig({
     resolve: {
         alias: {
-            "@": fileURLToPath(new URL("./src", import.meta.url))
+            "@": resolve(__dirname, "./src")
         }
     },
     plugins: [
