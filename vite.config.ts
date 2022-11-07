@@ -44,6 +44,7 @@ export default defineConfig({
         fs: {
             allow: [".."]
         },
-        host: true
+        host: true,
+        port: 3000
     }
 });
