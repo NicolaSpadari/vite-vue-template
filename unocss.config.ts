@@ -11,7 +11,9 @@ import {
 } from "unocss";
 
 export default defineConfig({
-    shortcuts: [],
+    shortcuts: [
+        ["crate", "container mx-auto"]
+    ],
     presets: [
         presetUno(),
         presetTagify(),
