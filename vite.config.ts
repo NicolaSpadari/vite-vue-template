@@ -5,7 +5,6 @@ import Pages from "vite-plugin-pages";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import UnoCSS from "@unocss/vite";
-import { DirResolverHelper, dirResolver } from "vite-auto-import-resolvers";
 
 export default defineConfig({
     resolve: {
@@ -29,7 +28,6 @@ export default defineConfig({
         Components({
             deep: false
         }),
-        DirResolverHelper(),
         AutoImport({
             imports: [
                 "vue",
@@ -37,7 +35,10 @@ export default defineConfig({
                 "@vueuse/core",
                 "@vueuse/head"
             ],
-            resolvers: [dirResolver()]
+            dirs: [
+                "./src/components",
+                "./src/composables"
+            ]
         })
     ],
     server: {

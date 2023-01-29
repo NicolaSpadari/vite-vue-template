@@ -1,5 +1,5 @@
 const useTest = () => {
-    return "test";
+    return "text from composable";
 };
 
 export default useTest;
