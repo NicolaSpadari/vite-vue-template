@@ -35,10 +35,7 @@ export default defineConfig({
                 "@vueuse/core",
                 "@vueuse/head"
             ],
-            dirs: [
-                "./src/components",
-                "./src/composables"
-            ]
+            dirs: ["./src/composables"]
         })
     ],
     server: {
