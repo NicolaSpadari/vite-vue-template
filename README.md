@@ -44,7 +44,7 @@ cd my-app
 
 ### Development
 
-Run and visit http://localhost:5173
+Run and visit http://localhost:3000
 
 ```sh
 npm run dev
