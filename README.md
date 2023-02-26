@@ -2,6 +2,8 @@
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite) - latest, cutting-edge techologies
 
+- 🏎️ [Pnpm](https://pnpm.io) - Fast OOTB
+
 - 📂 File-based routing
 
 - 📦 Components and composables auto importing
@@ -10,7 +12,7 @@
 
 - 🎨 [UnoCSS](https://github.com/unocss/unocss)
 
-- 🔥 [\<script setup\> syntax](https://github.com/vuejs/rfcs/pull/227)
+- 🔥 [\<script setup\>](https://github.com/vuejs/rfcs/pull/227)
 
 - 🦾 Typescript
 
@@ -24,9 +26,7 @@
 - [Vue Router](https://github.com/vuejs/vue-router)
 - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
-- [unplugin-auto-import](https://github.com/antfu/unplugin-vue-components) - APIs auto import
-- [vite-auto-import-resolvers](https://github.com/dishait/vite-auto-import-resolvers) - composables auto import
-- [vite-plugin-envloader](https://github.com/NicolaSpadari/vite-plugin-envloader) - inject env variables in process.env
+- [unplugin-auto-import](https://github.com/antfu/unplugin-vue-components) - APIs auto import and composables auto import
 - [@vueuse/core](https://github.com/antfu/vueuse) - useful composition APIs
 - [@vueuse/head](https://github.com/vueuse/head) - manipulate document head reactively
 
@@ -44,10 +44,20 @@ cd my-app
 
 ### Development
 
-Run and visit http://localhost:3000
+Run and visit http://localhost:3000.
+<br>
+[@antfu/ni](https://github.com/antfu/ni) is recommended for the installation.
+
+Install packages:
 
 ```sh
-npm run dev
+$ ni
+```
+
+Start project:
+
+```sh
+$ nr dev
 ```
 
 ### Build
@@ -55,7 +65,7 @@ npm run dev
 To build, run
 
 ```sh
-npm run build
+$ nr build
 ```
 
 Will create the `dist` folder ready to be uploaded
