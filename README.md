@@ -1,6 +1,6 @@
 ### Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite 2](https://github.com/vitejs/vite) - latest, cutting-edge techologies
+- ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite) - latest, cutting-edge techologies
 
 - 📂 File-based routing
 
